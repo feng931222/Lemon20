@@ -1,4 +1,4 @@
-import  requests
+﻿import  requests
 import  openpyxl
 def read_data(filename,sheetname):
     wb = openpyxl.load_workbook(filename)#加载工作簿，打开一个已经存在的excel文件
@@ -75,7 +75,7 @@ def execute_fun(filename,sheetname):
             print('这{}条用例测试执行通过！'.format(case_id))
             final_re = 'Passed'
         else:
-            print('这{}用例执行不通过！'.format(case_id))
+            print('这{}条用例执行不通过！'.format(case_id))
             final_re = 'Failed'
         print('*'*50)
 
